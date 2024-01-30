@@ -1,0 +1,16 @@
+body {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border-radius: 8px;
+  border: 1px solid #4e75ff;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #4e75ff;
+  color: #fff;
+}

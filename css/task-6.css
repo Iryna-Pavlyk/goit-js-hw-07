@@ -1,0 +1,46 @@
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: baseline;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  width: 120px;
+  padding: 8px 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.create {
+  background: #4e75ff;
+  border: 1px solid #4e75ff;
+}
+
+.destroy {
+  background: #ff4e4e;
+  border: 1px solid #ff4e4e;
+}
+
+input {
+  padding: 8px 72px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
