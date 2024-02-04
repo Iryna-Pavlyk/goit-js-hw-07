@@ -1,15 +1,16 @@
 'use strict';
 
-const btnEl = document.querySelector('.change-color');
+const changeColorBtn =
+  document.querySelector('.change-color');
 const bodyEl = document.querySelector('body');
 const spanEl = document.querySelector('.color');
 
-btnEl.addEventListener('click', changeColor);
+changeColorBtn.addEventListener('click', changeColor);
 
 function changeColor() {
-  const changeClr = (bodyEl.style.backgroundColor =
-    getRandomHexColor());
-  spanEl.textContent = changeClr;
+  const color = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  spanEl.textContent = color;
 }
 
 function getRandomHexColor() {

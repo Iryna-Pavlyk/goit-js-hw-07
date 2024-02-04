@@ -19,8 +19,6 @@ function getRandomHexColor() {
 }
 function createBoxes(amount) {
   destroyHandler();
-  amount = inputEl.value;
-  inputEl.value = '';
   let boxSize = 30;
   if (amount >= 1 && amount <= 100) {
     for (let i = 0; i < amount; i++) {
@@ -32,11 +30,14 @@ function createBoxes(amount) {
       boxSize += 10;
     }
   }
+  inputEl.value = '';
 }
 
 function destroyHandler() {
   divBoxesEl.innerHTML = '';
 }
 
-createBtnEl.addEventListener('click', createBoxes);
+createBtnEl.addEventListener('click', () =>
+  createBoxes(Number(inputEl.value))
+);
 destroyBtnEl.addEventListener('click', destroyHandler);

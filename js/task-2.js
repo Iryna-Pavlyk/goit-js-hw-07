@@ -30,17 +30,7 @@ const galleryListEl = document.querySelector('.gallery');
 let html = '';
 for (const image of images) {
   html += `<li><img class="imageGalleryItems"
-  src="${image.url} alt="${image.alt}"></li>`;
+  src="${image.url}" alt="${image.alt}"></li>`;
 }
 
 galleryListEl.insertAdjacentHTML('beforeend', html);
-
-// const galleryListEl = document.querySelector('.gallery');
-// const html = images
-//   .map(
-//     image =>
-//       `<li><img class="imageGalleryItems"
-//  src="${image.url} alt="${image.alt}"></li>`
-//   )
-//   .join('');
-// galleryListEl.insertAdjacentHTML('beforeend', html);

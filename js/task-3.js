@@ -5,9 +5,10 @@ const outputEl = document.querySelector('#name-output');
 inputEl.addEventListener('input', inputHandler);
 
 function inputHandler() {
-  if (inputEl.value.trim() === '') {
+  let inputValueTrim = inputEl.value.trim();
+  if (inputValueTrim === '') {
     outputEl.textContent = 'Anonymous';
   } else {
-    outputEl.textContent = inputEl.value.trim();
+    outputEl.textContent = inputValueTrim;
   }
 }
